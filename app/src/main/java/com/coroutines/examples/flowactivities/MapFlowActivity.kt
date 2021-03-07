@@ -47,6 +47,7 @@ class MapFlowActivity : AppCompatActivity(), MyHandlers {
         //flow must run in Coroutine scope
         //run this Coroutine in IO scope because it is large job
         CoroutineScope(Dispatchers.IO).launch {
+            //here i use map operator to transform data from postmodel to postentity
             getPosts().map {dataBeforMapping->
                 dataBeforMapping.map {post-> PostEntity(post.body!!,post.title!!) }
             }.collect {dataAfterMapping->
@@ -63,12 +64,12 @@ class MapFlowActivity : AppCompatActivity(), MyHandlers {
 
     }
 
-    fun getPosts() : Flow<List<PostModel>>{
+    private fun getPosts() : Flow<List<PostModel>>{
         return flow{
+            //some delay because api response very fast
             delay(1000)
             emit(api.getPosts())
         }
-        //some delay becuase api response very fast
     }
 
 
