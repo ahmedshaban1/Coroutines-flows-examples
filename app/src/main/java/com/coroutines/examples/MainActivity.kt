@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.coroutines.examples.databinding.ActivityMainBinding
+import com.coroutines.examples.flowactivities.MapFlowActivity
 import com.coroutines.examples.flowactivities.SimpleFlowActivity
 import com.coroutines.examples.helpers.openActivity
 
@@ -15,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.simpleFlowBtn.setOnClickListener {
             openActivity(SimpleFlowActivity::class.java)
+        }
+
+
+        binding.mapFlowBtn.setOnClickListener {
+            openActivity(MapFlowActivity::class.java)
         }
 
     }
