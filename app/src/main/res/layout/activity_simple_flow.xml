@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="handlers" type="com.coroutines.examples.helpers.MyHandlers"/>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".flowactivities.SimpleFlowActivity">
+
+    <Button
+        android:id="@+id/doSomeWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do some work"
+        android:textAllCaps="false"
+        android:onClick="@{handlers::onDoSomeWorkClicked}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:id="@+id/dataViewText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doSomeWork" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
