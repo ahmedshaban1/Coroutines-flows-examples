@@ -6,6 +6,7 @@ import android.view.View
 import com.coroutines.examples.databinding.ActivityMainBinding
 import com.coroutines.examples.flowactivities.MapFlowActivity
 import com.coroutines.examples.flowactivities.SimpleFlowActivity
+import com.coroutines.examples.flowactivities.ZipFlowActivity
 import com.coroutines.examples.helpers.openActivity
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.mapFlowBtn.setOnClickListener {
             openActivity(MapFlowActivity::class.java)
+        }
+
+
+        binding.zipFlowBtn.setOnClickListener {
+            openActivity(ZipFlowActivity::class.java)
         }
 
     }

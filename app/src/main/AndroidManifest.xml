@@ -13,6 +13,8 @@
         android:theme="@style/Theme.CoroutinesFlowsExamples">
         <activity android:name=".flowactivities.SimpleFlowActivity"/>
         <activity android:name=".flowactivities.MapFlowActivity"/>
+        <activity android:name=".flowactivities.ZipFlowActivity"/>
+
 
         <activity android:name=".MainActivity">
             <intent-filter>

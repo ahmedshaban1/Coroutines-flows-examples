@@ -48,8 +48,8 @@ class MapFlowActivity : AppCompatActivity(), MyHandlers {
         //run this Coroutine in IO scope because it is large job
         CoroutineScope(Dispatchers.IO).launch {
             //here i use map operator to transform data from postmodel to postentity
-            getPosts().map {dataBeforMapping->
-                dataBeforMapping.map {post-> PostEntity(post.body!!,post.title!!) }
+            getPosts().map {dataBeforeMapping->
+                dataBeforeMapping.map {post-> PostEntity(post.body!!,post.title!!) }
             }.collect {dataAfterMapping->
                 //switch to main third do bind data
                 withContext(Dispatchers.Main){
