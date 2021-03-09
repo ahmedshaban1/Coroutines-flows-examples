@@ -1,8 +1,7 @@
 package com.coroutines.examples
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.coroutines.examples.databinding.ActivityMainBinding
 import com.coroutines.examples.flowactivities.MapFlowActivity
 import com.coroutines.examples.flowactivities.SimpleFlowActivity
@@ -30,9 +29,46 @@ class MainActivity : AppCompatActivity() {
             openActivity(ZipFlowActivity::class.java)
         }
 
+        binding.combineFlowBtn.setOnClickListener {
+            openActivity(ZipFlowActivity::class.java)
+        }
+
         binding.takeFlowBtn.setOnClickListener {
             openActivity(TakeFlowActivity::class.java)
         }
+
+        binding.filterFlowBtn.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+        binding.reduceFlowBtn.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+
+
+        binding.flatmapconactbtn.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+
+        binding.merge.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+        binding.flatmaplatest.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+
+        binding.catchFlowBtn.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
+        binding.networkingFlowBtn.setOnClickListener {
+            //openActivity(ZipFlowActivity::class.java)
+        }
+
 
     }
 

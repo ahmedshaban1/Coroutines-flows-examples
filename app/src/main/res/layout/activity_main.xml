@@ -19,7 +19,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Simple flow"
+                android:text="@string/simple_flow"
                 android:textAllCaps="false"
                 android:id="@+id/simpleFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Map"
+                android:text="@string/map"
                 android:textAllCaps="false"
                 android:id="@+id/mapFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zip"
+                android:text="@string/zip"
                 android:textAllCaps="false"
                 android:id="@+id/zipFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +51,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Combine"
+                android:text="@string/combine"
                 android:textAllCaps="false"
                 android:id="@+id/combineFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +65,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Take"
+                android:text="@string/take"
                 android:textAllCaps="false"
                 android:id="@+id/takeFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -76,7 +76,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Filter"
+                android:text="@string/filter"
                 android:textAllCaps="false"
                 android:id="@+id/filterFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -87,7 +87,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reduce"
+                android:text="@string/reduce"
                 android:textAllCaps="false"
                 android:id="@+id/reduceFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -98,9 +98,9 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FlatMapConcat﻿"
+                android:text="@string/flatmapconcat"
                 android:textAllCaps="false"
-                android:id="@+id/flatMapConcat﻿FlowBtn"
+                android:id="@+id/flatmapconactbtn"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -111,9 +111,9 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FlatMapMerge﻿"
+                android:text="@string/flatmapmerge"
                 android:textAllCaps="false"
-                android:id="@+id/flatMapMerge﻿﻿FlowBtn"
+                android:id="@+id/merge"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -122,9 +122,9 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FlatMapLatest﻿"
+                android:text="@string/flatmaplatest"
                 android:textAllCaps="false"
-                android:id="@+id/flatMapLatest﻿﻿﻿FlowBtn"
+                android:id="@+id/flatmaplatest"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -133,7 +133,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Catch"
+                android:text="@string/catch_error"
                 android:textAllCaps="false"
                 android:id="@+id/catchFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -144,7 +144,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full networking example"
+                android:text="@string/full_networking_example"
                 android:textAllCaps="false"
                 android:id="@+id/networkingFlowBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
