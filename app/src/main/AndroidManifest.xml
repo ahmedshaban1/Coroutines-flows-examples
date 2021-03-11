@@ -15,6 +15,7 @@
         <activity android:name=".flowactivities.MapFlowActivity"/>
         <activity android:name=".flowactivities.ZipFlowActivity"/>
         <activity android:name=".flowactivities.TakeFlowActivity"/>
+        <activity android:name=".flowactivities.CombineFlowActivity"/>
 
 
 

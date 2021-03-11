@@ -3,10 +3,7 @@ package com.coroutines.examples
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.coroutines.examples.databinding.ActivityMainBinding
-import com.coroutines.examples.flowactivities.MapFlowActivity
-import com.coroutines.examples.flowactivities.SimpleFlowActivity
-import com.coroutines.examples.flowactivities.TakeFlowActivity
-import com.coroutines.examples.flowactivities.ZipFlowActivity
+import com.coroutines.examples.flowactivities.*
 import com.coroutines.examples.helpers.openActivity
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.combineFlowBtn.setOnClickListener {
-            openActivity(ZipFlowActivity::class.java)
+            openActivity(CombineFlowActivity::class.java)
         }
 
         binding.takeFlowBtn.setOnClickListener {
