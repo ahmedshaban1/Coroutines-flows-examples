@@ -35,35 +35,29 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.filterFlowBtn.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(FilterFlowActivity::class.java)
         }
-
-        binding.reduceFlowBtn.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
-        }
-
-
 
         binding.flatmapconactbtn.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(FlatMapConcatActivity::class.java)
         }
 
 
         binding.merge.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(FlatMapMergeActivity::class.java)
         }
 
         binding.flatmaplatest.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(FlatMapLatestActivity::class.java)
         }
 
 
         binding.catchFlowBtn.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(CatchFlowActivity::class.java)
         }
 
         binding.networkingFlowBtn.setOnClickListener {
-            //openActivity(ZipFlowActivity::class.java)
+            openActivity(FullNetworkExampleActivity::class.java)
         }
 
 
