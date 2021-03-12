@@ -17,6 +17,8 @@
         <activity android:name=".flowactivities.TakeFlowActivity"/>
         <activity android:name=".flowactivities.CombineFlowActivity"/>
         <activity android:name=".flowactivities.FilterFlowActivity"/>
+        <activity android:name=".flowactivities.FlatMapConcatActivity"/>
+        <activity android:name=".flowactivities.FlatMapMergeActivity"/>
 
 
 
