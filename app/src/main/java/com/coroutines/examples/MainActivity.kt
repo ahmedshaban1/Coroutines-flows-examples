@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.coroutines.examples.databinding.ActivityMainBinding
 import com.coroutines.examples.flowactivities.*
+import com.coroutines.examples.flowactivities.full_network_example.FullNetworkExampleActivity
 import com.coroutines.examples.helpers.openActivity
+import com.coroutines.examples.helpers.showSnackbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,12 +50,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.flatmaplatest.setOnClickListener {
-            openActivity(FlatMapLatestActivity::class.java)
+           // openActivity(FlatMapLatestActivity::class.java)
+            showSnackbar("under development")
         }
 
 
         binding.catchFlowBtn.setOnClickListener {
-            openActivity(CatchFlowActivity::class.java)
+           // openActivity(CatchFlowActivity::class.java)
+            showSnackbar("under development")
+
         }
 
         binding.networkingFlowBtn.setOnClickListener {

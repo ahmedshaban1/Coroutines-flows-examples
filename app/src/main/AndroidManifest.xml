@@ -19,6 +19,7 @@
         <activity android:name=".flowactivities.FilterFlowActivity"/>
         <activity android:name=".flowactivities.FlatMapConcatActivity"/>
         <activity android:name=".flowactivities.FlatMapMergeActivity"/>
+        <activity android:name=".flowactivities.full_network_example.FullNetworkExampleActivity"/>
 
 
 
