@@ -48,7 +48,7 @@ class FlatMapConcatActivity : AppCompatActivity(), MyHandlers {
                 .flatMapConcat{ post ->
                     requestPostCommentsPostID(post)
             }.collect { postComments ->
-                //switch to main third do bind data
+                //switch to main thread do bind data
                 withContext(Dispatchers.Main) {
                     postComments.forEach{
                         binding.dataViewText.append("post id ${it.postId} with commenter email  ${it.email} \n")

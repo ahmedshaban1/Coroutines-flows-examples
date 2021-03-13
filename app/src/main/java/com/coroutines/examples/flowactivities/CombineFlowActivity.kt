@@ -58,7 +58,7 @@ class CombineFlowActivity : AppCompatActivity() , MyHandlers {
                 }
                 list
             }.collect { results ->
-                //switch to main third do bind data
+                //switch to main thread do bind data
                 withContext(Dispatchers.Main) {
                     //display data
                     results.forEach {

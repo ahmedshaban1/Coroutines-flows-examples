@@ -46,7 +46,7 @@ class FilterFlowActivity : AppCompatActivity(), MyHandlers {
             getPosts().filter { data ->
                 data.userId == 1
             }.collect { post ->
-                //switch to main third do bind data
+                //switch to main thread do bind data
                 withContext(Dispatchers.Main) {
                     binding.dataViewText.append("post title ${post.title} with user id ${post.userId} \n")
                     binding.loading.gone()

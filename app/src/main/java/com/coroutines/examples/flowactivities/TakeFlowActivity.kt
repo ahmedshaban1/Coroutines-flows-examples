@@ -46,7 +46,7 @@ class TakeFlowActivity : AppCompatActivity(), MyHandlers {
         CoroutineScope(Dispatchers.IO).launch {
             //here i use take operator to just get 10 emits
             getPosts().take(10).collect { post ->
-                //switch to main third do bind data
+                //switch to main thread do bind data
                 withContext(Dispatchers.Main) {
                     binding.dataViewText.append("title is : ${post.title}\n")
                     binding.loading.gone()
