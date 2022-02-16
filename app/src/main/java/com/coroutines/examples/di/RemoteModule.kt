@@ -1,11 +1,13 @@
 package com.coroutines.examples.di
 
+import com.coroutines.examples.flowactivities.parallel_requests.ParallelRequestsViewModel
 import com.coroutines.examples.network.ExampleApi
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -22,7 +24,7 @@ fun getRemoteModule(baseUrl: String) = module {
     factory {
         GsonBuilder()
             .setLenient()
-            .create();
+            .create()
     }
 
 
@@ -40,6 +42,11 @@ fun getRemoteModule(baseUrl: String) = module {
 
     single {
         get<Retrofit>().create(ExampleApi::class.java)
+    }
+
+
+    viewModel {
+        ParallelRequestsViewModel(get())
     }
 
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.coroutines.examples.databinding.ActivityMainBinding
 import com.coroutines.examples.flowactivities.*
 import com.coroutines.examples.flowactivities.full_network_example.FullNetworkExampleActivity
+import com.coroutines.examples.flowactivities.parallel_requests.ParallelRequestsActivity
 import com.coroutines.examples.helpers.openActivity
 import com.coroutines.examples.helpers.showSnackbar
 
@@ -49,9 +50,8 @@ class MainActivity : AppCompatActivity() {
             openActivity(FlatMapMergeActivity::class.java)
         }
 
-        binding.flatmaplatest.setOnClickListener {
-           // openActivity(FlatMapLatestActivity::class.java)
-            showSnackbar("under development")
+        binding.parallelRequestsBtn.setOnClickListener {
+            openActivity(ParallelRequestsActivity::class.java)
         }
 
 

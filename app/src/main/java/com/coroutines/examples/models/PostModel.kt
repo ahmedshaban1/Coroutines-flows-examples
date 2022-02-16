@@ -11,7 +11,8 @@ data class PostModel(
     @SerializedName("title")
     var title: String?,
     @SerializedName("userId")
-    var userId: Int?
+    var userId: Int?,
+    var comments:MutableList<Comment> = mutableListOf()
 )
 
 

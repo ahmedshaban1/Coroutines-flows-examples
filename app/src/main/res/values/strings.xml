@@ -10,6 +10,8 @@
     <string name="flatmapconcat">FlatMapConcat﻿</string>
     <string name="flatmapmerge">FlatMapMerge﻿</string>
     <string name="flatmaplatest">FlatMapLatest﻿</string>
-    <string name="catch_error" >Catch</string>
+    <string name="catch_error">Catch</string>
     <string name="full_networking_example">Full networking example</string>
+    <string name="title_activity_parallel_requests">ParallelRequestsActivity</string>
+    <string name="parallel_request">Parallel Request</string>
 </resources>

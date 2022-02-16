@@ -15,4 +15,5 @@ interface ExampleApi {
 
     @GET("comments")
     suspend fun getPostsComments(@Query("postId") id: Int): List<Comment>
+
 }

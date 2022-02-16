@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.coroutines.examples">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:name=".helpers.App"
+        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CoroutinesFlowsExamples">
-        <activity android:name=".flowactivities.SimpleFlowActivity"/>
-        <activity android:name=".flowactivities.MapFlowActivity"/>
-        <activity android:name=".flowactivities.ZipFlowActivity"/>
-        <activity android:name=".flowactivities.TakeFlowActivity"/>
-        <activity android:name=".flowactivities.CombineFlowActivity"/>
-        <activity android:name=".flowactivities.FilterFlowActivity"/>
-        <activity android:name=".flowactivities.FlatMapConcatActivity"/>
-        <activity android:name=".flowactivities.FlatMapMergeActivity"/>
-        <activity android:name=".flowactivities.full_network_example.FullNetworkExampleActivity"/>
-
-
-
+        <activity
+            android:name=".flowactivities.parallel_requests.ParallelRequestsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_parallel_requests"
+            android:theme="@style/Theme.CoroutinesFlowsExamples" />
+        <activity android:name=".flowactivities.SimpleFlowActivity" />
+        <activity android:name=".flowactivities.MapFlowActivity" />
+        <activity android:name=".flowactivities.ZipFlowActivity" />
+        <activity android:name=".flowactivities.TakeFlowActivity" />
+        <activity android:name=".flowactivities.CombineFlowActivity" />
+        <activity android:name=".flowactivities.FilterFlowActivity" />
+        <activity android:name=".flowactivities.FlatMapConcatActivity" />
+        <activity android:name=".flowactivities.FlatMapMergeActivity" />
+        <activity android:name=".flowactivities.full_network_example.FullNetworkExampleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

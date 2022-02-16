@@ -112,9 +112,9 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/flatmaplatest"
+                android:text="@string/parallel_request"
                 android:textAllCaps="false"
-                android:id="@+id/flatmaplatest"
+                android:id="@+id/parallelRequestsBtn"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
